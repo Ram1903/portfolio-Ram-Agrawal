@@ -1,0 +1,418 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height:100vh;
+    background: #0c192c;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px ;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 10px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
+nav{
+    margin: -29px;
+    width:110%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-image: linear-gradient(#033747,#012733);
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size:18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+
+}
+nav li a:hover{
+    color: #ff8c69;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+
+.main{
+    margin-top: 190px;
+    margin-left: 160px;
+}
+.devPic img{ float: right;
+    width:40wh;
+    height: 50vh;
+    border-radius: 40%;
+    margin-top: -380px;
+    margin-right: 180px;
+}
+.hello{
+    font-size: 85px;
+    color: darkblue;
+    font-family: 'Maven Pro', sans-serif;    
+    
+}
+.name{
+    font-size: 90px;
+    font-weight: bold;
+    color: rgb(241, 71, 9);
+}
+.about{
+    color: white;
+    font-size: 40px;
+}
+.moreAbout{
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 23px;
+
+}
+
+.buttons{
+    margin-top: 72px;
+}
+.buttons button{
+    padding: 12px 24px;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 22px;
+    font-weight: bold;
+    size: 29px;
+    margin: 0 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+.likes{
+    margin-top: 25px;
+    font-size: 50px;
+    color: white;
+}
+.auto-type{
+    color: #4fc3dc;
+}
+
+
+.social-icon ul{
+    margin-top:40px;
+    margin-left:140px;
+    display: flex;
+}
+.social-icon ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.social-icon ul li {
+    font-size: 35px;
+    line-height: 60px;
+    transition: .3s;
+    color: white;
+}
+.social-icon ul li a:hover{
+    color: rgb(247, 241, 241);
+}
+.social-icon ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.566);
+    transition: 0.2s;
+}
+
+.social-icon ul li a :hover{
+    transform: translate(0,-10%);
+}
+.social-icon ul li:nth-child(1) a:hover{
+    background-color: rgb(84, 41, 237);
+}
+
+.social-icon ul li:nth-child(2) a:hover{
+    background-color: rgb(185, 6, 93);
+}
+.social-icon ul li:nth-child(3) a:hover{
+    background-color: rgb(15, 234, 92);
+}
+.social-icon ul li:nth-child(4) a:hover{
+    background-color: rgb(18, 69, 235);
+}
+.social-icon ul li:nth-child(5) a:hover{
+    background-color: rgb(9, 10, 11);
+}
+
+
+
+/*introduction part*/
+
+.main1{
+    margin-top: 190px;
+    margin-left: 160px;
+}
+
+.hello1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.about1
+{
+    color: white;
+    font-size: 40px;
+    font-family: 'Geologica', sans-serif;
+}
+
+.rdevPic img{
+    float: right;
+    width:40wh;
+    height: 50vh;
+    border-radius: 40%;
+    margin-top: -320px;
+    margin-right: 280px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Maven+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Maven+Pro:wght@500&family=Rubik&display=swap');
+
+
+.moreabout1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+.email1{
+    display: flex;
+    padding: 0px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0px;
+    color: #4fc3dc;
+    font-family: 'Roboto', sans-serif;    
+}
+.mail{
+    color: white;
+}
+.location{
+    color: #4fc3dc;
+    display: flex;
+    padding: 0px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.place{
+    color: white;
+}
+
+
+
+/*contact area*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;    
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-container {
+    /* margin-left: 550px; */
+    margin-top: 80px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .c-text{
+    color: white;
+  }
+
+
+  .contact-img{
+    margin-left: 100px;
+  }
+
+  .intro1{
+    color: #f18112;
+    display: flex;
+    padding: 0px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    
+}
+.co{
+    color: white;
+}
+.main4{
+    margin-left: 400px;
+    margin-top: 130px;
+}
+
+.card-img-top{
+    height:280px;
+    width:380px;
+    margin-top:50px;
+  }
+.card-title{
+    color:#0be1e9;
+    size: 50px;
+  }
+.card-text{
+    color:white;
+  }
+.year{
+      
+  }
+
+  .col{
+    margin-right: 130px;
+    margin-left: 180px;
+    margin-top: 70px;
+  }
+  .col header.title{
+    font-family: helvetica;
+    color: #11a372;
+    padding: 0px 0px 20px 30px;
+    font-size: 40px;
+    text-align: left;
+  }
+  .col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+  }
+  .col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 30px;
+  }
+  .col .contents .box:hover{
+    box-shadow: 0px 3px 12px #ccc;
+    border: 1px solid transparent;
+  }
+  .col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border:2px solid white;
+  }
+  .box p2{
+    position: relative;
+    color: #11a372;
+    font-size: 22px;
+  }
+  .box h3{
+    font-size: 20px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: #444;
+  }
+  .box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+  }
+
+  .img-edu{
+    margin-top: -540px;
+    height: 30px;
+    width: 40px;
+  }
+  .img-sfl{
+    margin-top: -800px;
+    height: 80px;
+    width: 20px;
+  }
